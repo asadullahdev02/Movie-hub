@@ -141,7 +141,7 @@ class _MovieHomeScreenState extends State<MovieHomeScreen> {
                       Container(
                         padding: const EdgeInsets.all(8),
                         decoration: BoxDecoration(
-                          color: AppColors.cinemaRed.withOpacity(0.12),
+                          color: AppColors.cinemaRed.withValues(alpha: 0.12),
                           borderRadius: BorderRadius.circular(10),
                         ),
                         child: const Icon(Icons.video_library_rounded, color: AppColors.cinemaRed),
@@ -169,7 +169,7 @@ class _MovieHomeScreenState extends State<MovieHomeScreen> {
                       labelText: 'Movie Title *',
                       labelStyle: const TextStyle(color: AppColors.softGrey),
                       hintText: 'e.g. Oppenheimer',
-                      hintStyle: TextStyle(color: AppColors.softGrey.withOpacity(0.6)),
+                      hintStyle: TextStyle(color: AppColors.softGrey.withValues(alpha: 0.6)),
                       filled: true,
                       fillColor: const Color(0xFFF8FAFC),
                       border: OutlineInputBorder(
@@ -201,7 +201,7 @@ class _MovieHomeScreenState extends State<MovieHomeScreen> {
                             labelText: 'Genre',
                             labelStyle: const TextStyle(color: AppColors.softGrey),
                             hintText: 'e.g. Sci-Fi',
-                            hintStyle: TextStyle(color: AppColors.softGrey.withOpacity(0.6)),
+                            hintStyle: TextStyle(color: AppColors.softGrey.withValues(alpha: 0.6)),
                             filled: true,
                             fillColor: const Color(0xFFF8FAFC),
                             border: OutlineInputBorder(
@@ -475,7 +475,7 @@ class _MovieHomeScreenState extends State<MovieHomeScreen> {
               borderRadius: BorderRadius.circular(16),
               boxShadow: [
                 BoxShadow(
-                  color: Colors.black.withOpacity(0.06),
+                  color: Colors.black.withValues(alpha: 0.06),
                   blurRadius: 10,
                   offset: const Offset(0, 3),
                 ),
@@ -545,7 +545,7 @@ class _MovieHomeScreenState extends State<MovieHomeScreen> {
               style: const TextStyle(color: AppColors.textWhite, fontSize: 14),
               decoration: InputDecoration(
                 hintText: 'Search movies by title or genre...',
-                hintStyle: TextStyle(color: AppColors.softGrey.withOpacity(0.7), fontSize: 13),
+                hintStyle: TextStyle(color: AppColors.softGrey.withValues(alpha: 0.7), fontSize: 13),
                 prefixIcon: const Icon(Icons.search_rounded, color: AppColors.softGrey, size: 20),
                 suffixIcon: _searchQuery.isNotEmpty
                     ? IconButton(
@@ -600,7 +600,7 @@ class _MovieHomeScreenState extends State<MovieHomeScreen> {
                         Icon(
                           Icons.local_movies_outlined,
                           size: 64,
-                          color: AppColors.softGrey.withOpacity(0.4),
+                          color: AppColors.softGrey.withValues(alpha: 0.4),
                         ),
                         const SizedBox(height: 12),
                         Text(
@@ -708,7 +708,7 @@ class _MovieHomeScreenState extends State<MovieHomeScreen> {
         borderRadius: BorderRadius.circular(14),
         boxShadow: [
           BoxShadow(
-            color: Colors.black.withOpacity(0.06),
+            color: Colors.black.withValues(alpha: 0.06),
             blurRadius: 8,
             offset: const Offset(0, 2),
           ),
@@ -759,7 +759,7 @@ class _MovieHomeScreenState extends State<MovieHomeScreen> {
                         const SizedBox(width: 6),
                         Text(
                           '(${movie.releaseYear})',
-                          style: TextStyle(fontSize: 12, color: AppColors.softGrey.withOpacity(0.8)),
+                          style: TextStyle(fontSize: 12, color: AppColors.softGrey.withValues(alpha: 0.8)),
                         ),
                       ],
                     ],

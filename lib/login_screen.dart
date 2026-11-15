@@ -86,7 +86,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     shape: BoxShape.circle,
                     boxShadow: [
                       BoxShadow(
-                        color: Colors.black.withOpacity(0.06),
+                        color: Colors.black.withValues(alpha: 0.06),
                         blurRadius: 10,
                         offset: const Offset(0, 4),
                       ),
@@ -131,7 +131,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     borderRadius: BorderRadius.circular(16),
                     boxShadow: [
                       BoxShadow(
-                        color: Colors.black.withOpacity(0.06),
+                        color: Colors.black.withValues(alpha: 0.06),
                         blurRadius: 12,
                         offset: const Offset(0, 4),
                       ),
@@ -160,7 +160,7 @@ class _LoginScreenState extends State<LoginScreen> {
                           labelText: 'Email Address',
                           labelStyle: const TextStyle(color: AppColors.softGrey),
                           hintText: 'e.g. filmfan@cinema.com',
-                          hintStyle: TextStyle(color: AppColors.softGrey.withOpacity(0.6)),
+                          hintStyle: TextStyle(color: AppColors.softGrey.withValues(alpha: 0.6)),
                           filled: true,
                           fillColor: const Color(0xFFF8FAFC),
                           border: OutlineInputBorder(
@@ -198,7 +198,7 @@ class _LoginScreenState extends State<LoginScreen> {
                           labelText: 'Password',
                           labelStyle: const TextStyle(color: AppColors.softGrey),
                           hintText: 'Minimum 6 characters',
-                          hintStyle: TextStyle(color: AppColors.softGrey.withOpacity(0.6)),
+                          hintStyle: TextStyle(color: AppColors.softGrey.withValues(alpha: 0.6)),
                           filled: true,
                           fillColor: const Color(0xFFF8FAFC),
                           border: OutlineInputBorder(
@@ -222,9 +222,9 @@ class _LoginScreenState extends State<LoginScreen> {
                         Container(
                           padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
                           decoration: BoxDecoration(
-                            color: AppColors.cinemaRed.withOpacity(0.12),
+                            color: AppColors.cinemaRed.withValues(alpha: 0.12),
                             borderRadius: BorderRadius.circular(8),
-                            border: Border.all(color: AppColors.cinemaRed.withOpacity(0.4)),
+                            border: Border.all(color: AppColors.cinemaRed.withValues(alpha: 0.4)),
                           ),
                           child: Row(
                             children: [
@@ -279,7 +279,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 Container(
                   padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 10),
                   decoration: BoxDecoration(
-                    color: const Color(0xFFE2E8F0).withOpacity(0.6),
+                    color: const Color(0xFFE2E8F0).withValues(alpha: 0.6),
                     borderRadius: BorderRadius.circular(10),
                   ),
                   child: const Row(
