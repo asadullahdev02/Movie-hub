@@ -1,4 +1,4 @@
-
+# Flutter / Dart specific
 .dart_tool/
 .flutter-plugins
 .flutter-plugins-dependencies
@@ -46,4 +46,10 @@ build/
 .Trashes
 ehthumbs.db
 Thumbs.db
+
+# Archives
+*.zip
+*.rar
+*.tar.gz
+
 
